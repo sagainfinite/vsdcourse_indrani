@@ -17,7 +17,7 @@ Author: Indrani Aekabote
 #### Number of Cells
 ![no  of cells](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/ae1ecdfc-1501-4b8e-80f7-c5552ad51cbe)
 
-#### Flop Ratio = $`/frac{ 1613/14876 } `$
+#### Flop Ratio = $`\frac{ $1613/ $14876 } `$
                 = 0.1084
                 = 1.084%
 ### List of reports generated after the synthesis was run
