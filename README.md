@@ -19,7 +19,7 @@ Author: Indrani Aekabote
 
 ### Flop Ratio = $`\frac{1613}{14876}`$
                 = 0.1084
-                = 1.084%
+                = 10.84%
 ### List of reports generated after the synthesis was run
 ![report list](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/55bd297e-e383-4568-8388-4749149fc295)
 ### STA report deatils 
