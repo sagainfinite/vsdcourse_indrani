@@ -22,5 +22,5 @@ Author: Indrani Aekabote
                 = 10.84%
 ### List of reports generated after the synthesis was run
 ![report list](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/55bd297e-e383-4568-8388-4749149fc295)
-### STA report deatils 
+### STA report details 
 ![sta_report](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/3bf784df-ce7f-4518-9421-3f6fdde7647a)
