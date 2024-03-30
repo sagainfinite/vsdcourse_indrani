@@ -1,11 +1,11 @@
 # VSD SOC Design using OpenLANE
 
 ### Day-wise Checklist
-** - [x] DAY - 1 ** 
-** - [ ] DAY - 2 **
-** - [ ] DAY - 3 **
-** - [ ] DAY - 4 **
-** - [ ] DAY - 5 **
+- [x] ** DAY - 1 **
+- [ ] ** DAY - 2 **
+- [ ] ** DAY - 3 **
+- [ ] ** DAY - 4 **
+- [ ] ** DAY - 5 **
 <br>
 Author: Indrani Aekabote
 
