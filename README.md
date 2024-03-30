@@ -10,7 +10,7 @@ Author: Indrani Aekabote
 ### Chip area 
 ![chip area](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/da1d0c4d-3c2d-4979-85d4-03ecf65a6356)
 
-### Flop Ratio = Number of D-FFs/Total number of cells
+### Flop Ratio = $`\frac{Number of D-FFs}{Total number of cells} `$
 #### Number of D-FFs
 ![no  of d_ffs](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/53449890-43c2-4eeb-b1a1-d73a3ad5c075)
 
