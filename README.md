@@ -1,11 +1,11 @@
 # VSD SOC Design using OpenLANE
 
 ### Day-wise Checklist
-[**- [x] DAY - 1**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-1) <br>
-[**- [ ] DAY - 2**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-2) <br>
-[**- [ ] DAY - 3**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-3) <br>
-[**- [ ] DAY - 4**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-4) <br>
-[**- [ ] DAY - 5**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-5) <br>
+[**-[x] DAY - 1**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-1) <br>
+[**-[ ] DAY - 2**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-2) <br>
+[**-[ ] DAY - 3**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-3) <br>
+[**-[ ] DAY - 4**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-4) <br>
+[**-[ ] DAY - 5**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-5) <br>
 <br>
 Author: Indrani Aekabote
 
