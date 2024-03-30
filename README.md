@@ -1,18 +1,18 @@
 # VSD SOC Design using OpenLANE
 
 ### Day-wise Checklist
-[**- [x] DAY - 1**](https://github.com/binocroc/vsdcourse_indrani/blob/main/README.md#DAY-1)
-[**- [ ] DAY - 2**](https://github.com/binocroc/vsdcourse_indrani/blob/main/README.md#DAY-2)
-[**- [ ] DAY - 3**](https://github.com/binocroc/vsdcourse_indrani/blob/main/README.md#DAY-3)
-[**- [ ] DAY - 4**](https://github.com/binocroc/vsdcourse_indrani/blob/main/README.md#DAY-4)
-[**- [ ] DAY - 5**](https://github.com/binocroc/vsdcourse_indrani/blob/main/README.md#DAY-5)
+[**- [x] DAY - 1**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-1) <br>
+[**- [ ] DAY - 2**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-2) <br>
+[**- [ ] DAY - 3**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-3) <br>
+[**- [ ] DAY - 4**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-4) <br>
+[**- [ ] DAY - 5**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-5) <br>
 <br>
 Author: Indrani Aekabote
 
 #### Created a VM on my laptop.
 ![Screenshot 2024-03-27 222647](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/d30d2ee7-ad5a-4657-b7a1-c656fcd73c72)
 
-[# DAY-1 (Calculating the flop ratio)](url)
+[# DAY-1 (Calculating the flop ratio)](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-1)
 
 ### Chip area 
 ![chip area](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/da1d0c4d-3c2d-4979-85d4-03ecf65a6356)
@@ -32,4 +32,4 @@ Author: Indrani Aekabote
 ### STA report details 
 ![sta_report](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/3bf784df-ce7f-4518-9421-3f6fdde7647a)
 
-[# DAY-2 ](url)
+[# DAY-2 ]([url](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-2))
