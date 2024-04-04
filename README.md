@@ -32,7 +32,7 @@ Author: Indrani Aekabote
 ### STA report details 
 ![sta_report](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/3bf784df-ce7f-4518-9421-3f6fdde7647a)
 
-## [ DAY-2 (Determine Die Area and floorplan and placement in Magic)](https://github.com/sagainfinite/vsdcourse_indrani?tab=readme-ov-file#DAY-2) <br>
+## [ DAY-2 (Determine Die Area alongwith floorplan and placement in Magic)](https://github.com/sagainfinite/vsdcourse_indrani?tab=readme-ov-file#DAY-2) <br>
 #### PART 1: Die Area 
 #### PART 2: Floorplan
 #### PART 3: PLacement
