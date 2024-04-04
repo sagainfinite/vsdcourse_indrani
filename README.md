@@ -2,7 +2,7 @@
 
 ### Day-wise Checklist
 - [x] [**DAY - 1**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-1) <br>
-- [ ] [**DAY - 2**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-2) <br>
+- [x] [**DAY - 2**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-2) <br>
 - [ ] [**DAY - 3**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-3) <br>
 - [ ] [**DAY - 4**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-4) <br>
 - [ ] [**DAY - 5**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-5) <br>
@@ -32,4 +32,16 @@ Author: Indrani Aekabote
 ### STA report details 
 ![sta_report](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/3bf784df-ce7f-4518-9421-3f6fdde7647a)
 
-[# DAY-2 ](https://github.com/sagainfinite/vsdcourse_indrani?tab=readme-ov-file#DAY-2)
+[# DAY-2 (Determine Die Area and floorplan and placement in Magic](https://github.com/sagainfinite/vsdcourse_indrani?tab=readme-ov-file#DAY-2)
+
+### Die Area 
+#### Area of die (in microns) = width X height 
+
+#### Figure: Die coordinates in picorv32a.floorplan.def 
+![die area](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/c8d68221-1740-48d1-bb24-3f04fd207791)
+ #### 1 micron (µm) = 1000 units
+ #### (X,Y) initial coordinates = (0,0)
+ #### (X,Y) final coordinates = (660685,671405)
+ #### Width (in µm) = $`\frac{660685}{1000}`$ = 660.685 µm
+ #### Height (in µm) = $`\frac{671405}{1000}`$ = 660.685 µm
+ #### Area of Die (in µm) = 660.685 X 660.685 = 443587.2124 µm² (square microns)
