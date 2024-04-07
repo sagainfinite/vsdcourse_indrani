@@ -158,23 +158,25 @@ Author: Indrani Aekabote
 #### Editing inside ngspice 
 ##### Figure: Before editing
 ![before](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/a94bf4d0-4ca6-43c4-b3d3-557111a63047)
-      # Enter the following new commands and description
-      >> .include ./libs/pshort.lib
-      >> .include ./libs/nshort.lib
-      >> //.subckt sky130_inv 'A Y VPWR VGND
-      >>  M1000 Y A VGND VGND nshort_model.0 ad=1.44n pd=0.152m as=1.37n ps=0.148m w=35 l=23
-      >>  M1001 Y A VPWR VPWR pshort_model.0 ad=1.44n pd=0.152m as=1.52n ps=0.156m w=37 l=23
-      >>  VDD VPWR 0 3.3V
-      >>  VSS VGND O OV
-      >> Va A VGND PULSE(OV 3.3V 0 0.1ns 0.1ns 2ns 4ns)
-      >> CO Y A 0.0754f
-      >> C1 Y VPWR 0.117f
-      >> C2 A VPWR 0.0774f
-      >> C3 Y VGND 2f
-      >> C4 A VGND 0.45f
-      >> C5 VPWR VGND 0.781f
-      >> // . ends
-      >> .tran 1n 20n
+<br>
+        # Enter the following new commands and description
+        
+        >> .include ./libs/pshort.lib
+        >> .include ./libs/nshort.lib
+        >> //.subckt sky130_inv 'A Y VPWR VGND
+        >>  M1000 Y A VGND VGND nshort_model.0 ad=1.44n pd=0.152m as=1.37n ps=0.148m w=35 l=23
+        >>  M1001 Y A VPWR VPWR pshort_model.0 ad=1.44n pd=0.152m as=1.52n ps=0.156m w=37 l=23
+        >>  VDD VPWR 0 3.3V
+        >>  VSS VGND O OV
+        >> Va A VGND PULSE(OV 3.3V 0 0.1ns 0.1ns 2ns 4ns)
+        >> CO Y A 0.0754f
+        >> C1 Y VPWR 0.117f
+        >> C2 A VPWR 0.0774f
+        >> C3 Y VGND 2f
+        >> C4 A VGND 0.45f
+        >> C5 VPWR VGND 0.781f
+        >> // . ends
+        >> .tran 1n 20n
          
          . control
          run
