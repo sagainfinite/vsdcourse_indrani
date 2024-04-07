@@ -191,7 +191,11 @@ Author: Indrani Aekabote
 ##### > rise time
 ##### > rise propogation delay
 ##### > fall propogation delay
-
+      Given: VDD = 3.3V 
+      20% VDD = 0.66V
+      80% VDD = 2.64V
+      50% VDD = 1.65V
+      
 ##### Figure: Main plot 
       # command to plot in ngspice
       >> plot y vs time a
@@ -200,14 +204,19 @@ Author: Indrani Aekabote
 
 ##### Figure: Fall Time = 80% VDD - 20% VDD (during fall (logic '1' to logic '0'))
 ![fall time](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/a6cd7890-7059-47c6-b1d0-7221ba37ce7b)
+       <br> Fall Time = 0.04247 X 10 ^-9 
 <br>
+
 ##### Figure: Rise Time = 80% VDD - 20% VDD (during rise (logic '0' to logic '1'))
+        <br> Rise time = 0.06104 X 10 ^-9 
 ![rise time](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/5446d139-2e38-499e-8b2a-d3a561b55739)
 <br>
 ##### Figure: Rise Propogation Delay at 50% VDD (during rise)
+          <br> Rise propogation delay = 0.05698 X 10 ^-9 
 ![rise propogation](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/c14e44d4-85a5-4ea8-9d38-66c257b30e7d)
 <br>
 ##### Figure: Fall propogation delay at 50% VDD (during fall)
+          <br> Fall propogation delay = 0.02533 X 10 ^-9 
 ![fall propogation](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/b9b90dbd-bc87-4d70-bacc-3577c7308522)
 <br>
 ##### Figure: Temperature Status
