@@ -221,4 +221,54 @@ Author: Indrani Aekabote
 <br>
 ##### Figure: Temperature Status
 ![temperature](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/07d1f7af-b0fd-4099-bc19-909fe43df087)
+<br><br><br>
+### PART 3: Detect DRC issues and fix them
+ We first download the files from opencircuitdesign.com and then verify the rules mentioned in the SkyWater 130 Periphery RUle tab.
+       Link for the Periphery Rules: (https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html#rules-periphery--page-root)
+##### Figure: List of Periphery Rules
+![list of periphery rules](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/77f17fef-fd4c-4a44-b963-0755eaaa90b5)
+<br>
+    # Commands to load and extract DRC lab files
+    
+    >> cd
+    >> wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+    >> tar xfz drc_tests.tgz
+    >> cd drc_tests
+    >> ls -al
+    >> gvim .magicrc
+    >> magic -d XR 
+    
+##### Figure: Loading the files
+![load the files](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/9d6ff888-d0d2-4b26-ba5e-2279183b359d)
+<br>
+##### Figure: Extracting the compressed files
+![extract the files](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/8c54150e-6f30-45a8-9aed-20ca8650d51f)
+<br>
+##### Figure: Files under drc_tests
+![files under drc_tests](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/3cda4b40-987a-4948-9613-8dc9f2473347)
+<br>
+##### Figure: Work on the .magicrc file
+![work on  magicrc](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/9a1f91e9-1575-4234-93f3-e8ff6ef1ce2e)
+<br>
+##### Figure: Inside .magicrc
+![file  magicrc](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/2ce26c32-9478-403c-b9a8-6987fb0df3da)
+<br>
+##### Figure: Open the metal3 layer
+![open metal3 layer](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/6e8138db-e811-44b6-9920-603b920f6b52)
+<br>
+##### Figure: Met3 contact cuts
+![m3 contact cuts](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/671ed87a-9f03-4b5b-bf9a-bf2b4e67befb)
+<br>
+##### Figure: Metal3 Periphery Rules
+![met3 periphery rules](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/c55253e5-dbe1-4e2b-9ac7-076697f9dbe8)
 <br><br>
+### 1. Detecting poly.9 drc and fix it
+##### Figure: Loading poly layer
+![load poly](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/39725963-14e8-4c73-b277-8f200cafad79)
+<br>
+##### Figure: Dimensions of missing poly
+![dim of missing poly](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/d102146e-508a-404f-8d40-0129feab794d)
+<br>
+##### Figure: Poly.9 periphery rules minimum requirements
+![poly 9 constraint req](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/916ac2fc-f5ca-490a-a6a9-2a41cf87b2ff)
+<br>
