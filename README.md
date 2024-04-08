@@ -283,3 +283,57 @@ Author: Indrani Aekabote
 ##### Figure: Fixed poly.9
 ![fixed poly 9](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/1e6def4c-69ce-4932-8da6-bd3bc79f2e92)
 <br>
+##### Figure: Editing "alldiff" to "allpolynonres" 
+![alldiff to allpoly](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/684bec87-503d-4f9b-ba0d-16e34f35047e)
+<br>
+##### Figure: Editing " *nsd" to "allpolynonres" 
+![nsd to allpoly](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/ba91d4a8-4429-423d-91fe-03e0a2cfbbdf)
+<br>
+##### Figure: Fixed the poly.9 drc error
+![fixed poly 9](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/390cb4c5-0a81-4d14-90cc-4070c2d63689)
+<br><br>
+##### Figure: Check for _drc why_ 
+![check for drc why](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/e93c3373-03dc-4e9a-a3d1-c952eb5f8131)
+<br><br><br>
+### 2. Detect and fix NWELL using templayer and assigning variants
+<br>
+
+##### Figure: NWELL is loaded on Magic 
+      # Command to load NWELL
+      
+      >> load nwell
+      >> cif ostyle drc
+      >> cif see dnwell_shrink
+      >> feed clear
+      >> cif see nwell_missing
+      >> feed clear 
+![nwell tkcon](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/e067b632-c7ae-4225-b4b5-8bcb444e18f5)
+![nwell before](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/1a4236ac-5a74-4876-a3c9-aa49710cbd28)
+<br>
+##### Figure: Nwell rules in Periphery Rules under nwell.-
+![nwell rules 4 and 5](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/b08c000a-796d-4b29-8310-c16fdc378515)
+<br>
+
+##### Figure: Description of "templayer" in sky130A.tech
+      # Command to open sky130A.tech under drc_tests
+      >> vi sky130A.tech
+![templayer bfr](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/04e2e2ca-5268-44a2-8fd1-f4e8520a2c16)
+<br><br>
+##### Figure: Adding/Editing dnwell
+![addign dnwell](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/d9d55fed-4228-4351-ab4f-f48aa02a141e)
+<br><br>
+##### Figure: Adding variants so as to not slow down Magic Tool
+![adding variants](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/73121b26-2483-445b-b356-018b852a4404)
+<br><br>
+##### Figure: NWELL _tkcon.tcl_ after the above changes
+![nwell tkcon after](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/1e4c3296-c162-458a-b104-3f04cfdbf98b)
+<br><br>
+##### Figure: NWELL after running drc check
+![nwell after](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/b74d355d-de49-4b76-86c5-cf7161d723a2)
+<br><br>
+
+
+
+
+
+
