@@ -1,11 +1,11 @@
 # VSD SOC Design using OpenLANE
 
 ### Day-wise Checklist
-- [x] [**DAY - 1**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-1) <br>
-- [x] [**DAY - 2**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-2) <br>
-- [x] [**DAY - 3**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-3) <br>
-- [ ] [**DAY - 4**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-4) <br>
-- [ ] [**DAY - 5**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-5) <br>
+- [x] [**DAY - 1 Inception of open-source EDA, OpenLANE and Sky130 PDK**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-1) <br>
+- [x] [**DAY - 2 Good floorplan vs bad floorplan and introduction to library cells**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-2) <br>
+- [x] [**DAY - 3 Design library cell using Magic Layout and ngspice characterization**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-3) <br>
+- [ ] [**DAY - 4 Pre-layout timing analysis and importance of good clock tree**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-4) <br>
+- [ ] [**DAY - 5 Final steps for RTL2GDS using tritonRoute and openSTA**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-5) <br>
 <br>
 Author: Indrani Aekabote
 
@@ -271,4 +271,15 @@ Author: Indrani Aekabote
 <br>
 ##### Figure: Poly.9 periphery rules minimum requirements
 ![poly 9 constraint req](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/916ac2fc-f5ca-490a-a6a9-2a41cf87b2ff)
+<br>
+##### Figure: Make changes in sky130A.tech file 
+1. *nsd to allpolynonres
+![nsd to allpoly](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/64dc38d5-cbc1-4d77-ade3-52a75a794ebf)
+<br>
+2. alldiff to allpolynonres
+
+![alldiff to allpoly](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/07b89ef5-a642-4dc2-a115-1567459b051a)
+<br>
+##### Figure: Fixed poly.9
+![fixed poly 9](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/1e6def4c-69ce-4932-8da6-bd3bc79f2e92)
 <br>
