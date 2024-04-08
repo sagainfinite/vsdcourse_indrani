@@ -438,14 +438,17 @@ Author: Indrani Aekabote
 ##### Figure: Placement success
 ![placement success](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/2ec47caf-1799-4cd6-9ab0-6993ea5e849f) <br><br>
       # Command to run Magic Tool
+      
       >> magic -T/home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
 ![placement](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/a9a50bcc-15f0-440d-ad45-5cb77ff6c63f)
 <br><br>
       # To find the custom cell: type in tkcon.tcl window
+      
       >> xload sky130_inv-ind
 ![xload in tkcon](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/351b0d43-bf17-433f-b77a-c8fef830a660)
 <br><br>
       # To view all the internal layers
+      
       >> expand
 ##### Figure: View of _sky130_inv-ind_ cell
 ![sky130_inv-ind cell](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/0ff8a257-fa31-4646-b0e2-33b363fb7088)
