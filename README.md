@@ -330,10 +330,123 @@ Author: Indrani Aekabote
 <br><br>
 ##### Figure: NWELL after running drc check
 ![nwell after](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/b74d355d-de49-4b76-86c5-cf7161d723a2)
+<br><br><br>
+## [ DAY-4 (Pre-layout timing analysis and importance of good clock tree)](https://github.com/sagainfinite/vsdcourse_indrani?tab=readme-ov-file#DAY-4) <br>
+#### PART 1: Lab session to configure synthesis settings and fix slack and include custom cell - sky130_inv-ind
+#### PART 2: Lab session to configure OpenSTA for post-synthsis timing analysis
+#### PART 3: Lab session to run CTS in TritonCTS
+#### PART 4: Timing analysis with real clocks in openSTA
 <br><br>
 
+### PART 1: Configuring synthesis settings and fix slack then include custom cell - sky130_inv-ind
+#### 1. Magic file to standard LEF file <br>
+##### Figure: Layers with their co-ordinates in description of _tracks.info_
+![layers description](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/e97e058b-230a-4e39-b407-a273e54afbed)
+<br><br>
+##### Figure: Find how the _grid arguments_ are given
+![grid args ](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/f4c6a350-2267-44c6-8dc9-9cb30e5df761)
+<br><br>
+##### Figure: Give the values as found in description 
+![give grid values](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/58026263-3366-49b5-9106-c0ea953b0f6d)
+<br><br>
+##### Figure: Intersection of Grids in pins _A_ and _Y_
+![intersection of grids](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/48229ed4-abfa-4a4b-ba6f-99df7217ac4b)
+<br><br>
+##### Figure: To specify pins in the design:
+      Goto---> Edit-->text
+![specifying pins](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/c4cfb696-0626-40a3-9f43-a98a375ea8a1)
+<br><br>
+##### Figure: Create custom cell _sky130_inv-ind_
+    # Command to save the file name
+    >> save sky130_inv-ind.mag
+    # Check the layout of the custom inverter created
+    >> magic -T sky130A.tech sky130_inv-ind.mag &
 
+![creating sky130_inv-ind](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/739c5f61-e68a-48cd-acf7-d568133627d7)
+<br><br>
+##### Figure: Convert it to LEF format
+    # Command to write LEF
+    >> left write
+![cmd lef write](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/377551b6-9ab4-49ca-be1b-c9f6b6c3cb8a)
+<br><br>
+##### Figure: Check in directory to find LEF file is created
+![lef file created](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/83e98c51-b679-4336-81e3-b0ebfe7c4e9c)
+<br><br>
+##### Figure: Description of _sky130_inv-ind
+![desc of sky130_inv-ind](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/27b88629-b080-449b-afa5-60ba4ec4ddb9)
+<br><br>
+##### Figure: Description of pin _A_
+![pin A in sky130_inv-ind](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/b5ca39b4-80b1-4aa7-93c0-337f84e1b9db)
+<br><br>
+##### Figure: Make a copy in _src_ under _designs/picorv32a_ directory
+![making a copy in src](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/eef3cf8f-965f-4aa1-9bef-97755da7b225)
+<br><br>
+##### Figure: Opening _config.tcl_ file
+![open config tcl](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/c418d77c-1719-4220-ae13-9e65f5f96243)
+<br><br>
+    # Commands to add in the config.tcl file as shown in figure
+    
+    >> set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+    >> set ::env(LIB_FASTEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib"
+    >> set ::env(LIB_SLOWEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib"
+    >> set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+    >>set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
+![config tcl](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/ec1ec5a7-f714-46cc-8a6d-abd35d63eb66)
+<br><br>
+<br><br><br>
+#### 2. Configure Synthesis settings and fix slack <br>
+##### Figure: Overwriting an existing runs file 
+    # Command to invoke openlane
 
+    >> cd vsduser/Desktop/work/tools/openlane_working_dir/openlane
+    >> docker
+    >> ./flow.tcl -interactive
+    >> package require openlane 0.9
+    # Usinf an existing file in runs directory
+    
+    >> prep -design picorv32a -tag 03-04_05-18 -overwrite
+    >> set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+    >> add_lefs -src $lefs
+    >> run_synthesis
+![overwriting on existing runs file](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/96814846-244d-4291-9653-c36753b1a270)
+<br><br>
+##### Figure: Chip Area (before synthesis tweaks)
+![chip area bfr](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/0f22f7fc-133e-43e4-93d4-1468374cf1a1)
+<br><br>
+![wns and tns slack](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/54f590ab-0e19-491e-ab74-65dad03a34bc)
+<br><br>
+##### Figure: Making edits to the following parameters
+![readme in configurations](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/83ce2e86-3ec2-40f2-b52d-db6f8ca02565)
+<br><br>
+##### Figure: Run the synthesis
+![run new synth settings](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/62c0d78d-3232-47be-bd22-8d31646a33a1)
+<br><br>
+##### Figure: Description of custom cell sky130_inv-ind
+![desc of sky130_inv-ind](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/27b88629-b080-449b-afa5-60ba4ec4ddb9)
+<br><br>
+##### Figure: Slack value has decreased after _run sythesis_ again
+![slack value after](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/04bdac5d-b118-4ff1-8b13-85d3ce55c97e)
+<br><br><br>
 
+#### 3. Floorplanning and Placement
+      # Command for floorplanning and placement
 
-
+      >> init_floorplan
+      >> place_io
+      >> tap_decap_or
+      >> run_placement
+##### Figure: Placement success
+![placement success](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/2ec47caf-1799-4cd6-9ab0-6993ea5e849f) <br><br>
+      # Command to run Magic Tool
+      >> magic -T/home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+![placement](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/a9a50bcc-15f0-440d-ad45-5cb77ff6c63f)
+<br><br>
+      # To find the custom cell: type in tkcon.tcl window
+      >> xload sky130_inv-ind
+![xload in tkcon](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/351b0d43-bf17-433f-b77a-c8fef830a660)
+<br><br>
+      # To view all the internal layers
+      >> expand
+##### Figure: View of _sky130_inv-ind_ cell
+![sky130_inv-ind cell](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/0ff8a257-fa31-4646-b0e2-33b363fb7088)
+<br><br><br>
