@@ -453,3 +453,28 @@ Author: Indrani Aekabote
 ##### Figure: View of _sky130_inv-ind_ cell
 ![sky130_inv-ind cell](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/0ff8a257-fa31-4646-b0e2-33b363fb7088)
 <br><br><br>
+### PART 2: Lab session to configure OpenSTA for post-synthsis timing analysis
+#### After running _run synthesis_ on Openlane
+##### Figure: Create a _pre_sta.conf_ file in the directory
+      # The directory to create the pre_sta.conf 
+      >> /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane
+![pre_sta conf file](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/6c58b5e9-1dc8-4bea-9a79-d56fc95a02b3)
+<br><br>
+##### Figure: Viewing the existing _base.sdc_ file
+    # This base.sdc file is present in the path
+    >> /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/scripts
+![base sdc file](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/93bf21a7-26f6-481b-8b2d-54afcdd08b38)
+<br><br>
+##### Figure: Change the capacitance load value(in pico farad) to _17.65_
+          # This base.sdc file is present in the path
+          >> /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign/libs
+![capacitance](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/dcd31bbe-bf11-415b-b1ac-398ba5796b28)
+<br><br>
+##### Figure: Create a _picorv32a.sdc_ file and view its description
+        # The directory to create the picorv32a.sdc
+        >> /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src
+![picorv32a sdc file](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/976dd0f2-b779-43ea-9e80-ab81720a895a)
+<br><br>
+
+![__inv_8](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/b9f8a9de-6fa3-4ec4-9b18-190344e6f64a)
+![typical sdc desc](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/a18665b5-a34d-45eb-acc8-89d834a9eadd)
