@@ -4,7 +4,7 @@
 - [x] [**DAY - 1 Inception of open-source EDA, OpenLANE and Sky130 PDK**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-1) <br>
 - [x] [**DAY - 2 Good floorplan vs bad floorplan and introduction to library cells**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-2) <br>
 - [x] [**DAY - 3 Design library cell using Magic Layout and ngspice characterization**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-3) <br>
-- [ ] [**DAY - 4 Pre-layout timing analysis and importance of good clock tree**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-4) <br>
+- [x] [**DAY - 4 Pre-layout timing analysis and importance of good clock tree**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-4) <br>
 - [ ] [**DAY - 5 Final steps for RTL2GDS using tritonRoute and openSTA**](https://github.com/sagainfinite/vsdcourse_indrani/blob/main/README.md#DAY-5) <br>
 <br>
 Author: Indrani Aekabote
