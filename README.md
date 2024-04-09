@@ -335,7 +335,7 @@ Author: Indrani Aekabote
 #### PART 1: Lab session to configure synthesis settings and fix slack and include custom cell - sky130_inv-ind
 #### PART 2: Lab session to configure OpenSTA for post-synthsis timing analysis
 #### PART 3: Lab session to run CTS in TritonCTS
-#### PART 4: Timing analysis with real clocks in openSTA
+#### PART 4: Timing analysis with real clocks in OPENROAD
 <br><br>
 
 ### PART 1: Configuring synthesis settings and fix slack then include custom cell - sky130_inv-ind
@@ -586,4 +586,49 @@ Author: Indrani Aekabote
 ![same 2 same echo](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/38c5e1ad-194d-4333-91bb-58d533bb6dfd)
 <br><br>
 
+### PART 4: Timing analysis with real clocks in OPENROAD
+<br>
 
+##### Figure: Openroad invoked 
+        # Commands to invoke _openroad_
+        
+        >> openroad
+        >> read_lef /openLANE_flow/designs/picorv32a/runs/03-04_05-18/tmp/merged.lef
+        >> read_def /openLANE_flow/designs/picorv32a/runs/03-04_05-18/results/cts/picorv32a.cts.def
+        >> write_db pico_cts_ind.db
+![openroad till db](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/4fdb0e37-b6ce-4395-8e58-ef45a9dfb80c)
+<br><br>
+##### Figure: Custom database found in _openlane_ directory
+![custom db](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/3326d15d-b61a-430e-abe3-31f6453ae348)
+<br><br>
+##### Figure: Read the sdc and check the clocks
+    # Commands
+    
+    >> read_sdc /openLANE_flow/designs/picorv32a/src/picorv32a.sdc
+    >> set_propagated_clock [all_clocks]
+![read_clocks](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/5d3770be-abf3-453b-ac65-b69098729b71)
+<br><br>
+##### Figure: Check the reports for the slew, net and capacitances etc.
+      # Command
+      
+      >> report_checks -path_delay min_max -format full_clock_expanded -digits 4
+![report check](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/4c6baf27-800a-4764-82a6-980b949a193c)
+<br><br>
+##### Figure: All the commands run till the reports
+![openroad_final](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/fb33f58b-c028-4b9d-9f20-5081abced953)
+<br><br>
+       # command to exit openroad
+       >> exit
+<br>
+ To reduce the hold slack, we will remove the _buf_1_ type and re-run the cts
+ ![removing buf_1](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/208abd84-44b6-436f-a480-6efc5a258f4f)
+ <br><br>
+ ##### Figure: Running _run_cts_ again
+ ![run_cts_again](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/69c165a3-2fa2-4505-afb0-5944d9bb566c)
+ <br><br>
+ ##### Figure: Hold Slack final value
+![hold slack final](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/af669eb6-158b-40f0-8431-4a6df590690f)
+<br><br>
+##### Figure: Setup Slack final value
+![setup slack](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/b1ed8d4d-3370-4d1a-9505-2726c82147d9)
+<br><br><br><br>
