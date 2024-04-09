@@ -545,3 +545,44 @@ Author: Indrani Aekabote
 ![cell 14481 found](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/82494606-9cdd-48d7-8d48-006fbe035ec4)
 <br><br><br><br>
 
+#### 2. Running CTS in TritonCTS
+
+##### Figure: Run floorplan
+        >> run_floorplan
+![run_placement](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/5c73bc64-4b73-4a6b-a549-b6c7f996c1eb)
+<br><br>
+##### Figure: Floorplan success
+![placement success](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/8782b034-df74-4fc4-9838-e0196943b216)
+<br><br>
+
+##### Figure: Running CTS
+![running cts](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/bef3a987-06d1-4aed-816b-95b58dfb7049)
+<br><br>
+##### Figure: CTS success
+![cts success](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/482ed0fb-2e05-477a-95e6-ad7648c87348)
+<br><br>
+##### Figure: CTS file created in synthesis folder
+![cts file in synth folder created (https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/d6726685-eb5e-429e-9661-2b1fb4990d0f)
+<br><br>
+##### Figure: Description of the _cts.def_ file
+![cts def file](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/87ea52d0-38d5-4fee-b10c-56305b9aa2e7)
+<br><br>
+##### Figure: CTS file inside _less README.md_ 
+![inside readme for CTS](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/809ec85e-e8c2-4e43-a974-4de99afcd70c)
+<br><br>
+##### Figure: Let's find the CTS value for these
+![lets find cts values](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/0c62e6b1-1b96-4914-b3ed-56d25fe5081b)
+<br><br>
+##### Figure: Found the CTS values
+![found the cts values](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/f49c158b-763c-4bdc-bf76-0b098c2ffc5d)
+<br><br>
+##### Figure: Two commands to find the CTS values for _typical.sdc_ 
+![same 2 same echo](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/38c5e1ad-194d-4333-91bb-58d533bb6dfd)
+<br><br>
+##### Figure: View _run_cts_ in .tcl description
+![run_cts in tcl desc](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/8ede4c18-8229-432e-ac66-eabf0575bd81)
+<br><br>
+##### Figure: Find for cts in _command.tcl_
+![cts tcl in tcl_cmd](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/2463d007-82c9-42b1-9bd3-31a35ade768f)
+<br><br>
+
