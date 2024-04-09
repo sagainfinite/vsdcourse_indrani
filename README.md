@@ -475,6 +475,73 @@ Author: Indrani Aekabote
         >> /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src
 ![picorv32a sdc file](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/976dd0f2-b779-43ea-9e80-ab81720a895a)
 <br><br>
-
-![__inv_8](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/b9f8a9de-6fa3-4ec4-9b18-190344e6f64a)
+##### Figure: Description of _typical.sdc_ file
 ![typical sdc desc](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/a18665b5-a34d-45eb-acc8-89d834a9eadd)
+<br><br><br><br>
+
+### PART 3: Lab session to run CTS in TritonCTS
+##### Figure: Run sta by invoking OpenSTA
+         # Command to invoke sta 
+         >> sta pre_sta.conf
+![run sta](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/7467d811-8a51-4573-a5d2-d95223c16a62)
+<br><br>
+##### Figure: Initial slack value (is high, we will try to reduce it)
+![slack before](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/18137f26-cfcd-42d7-8e51-1ef9c289fac1)
+<br><br>
+##### Figure: Slew of the cell _14513_ before upsizing it (upsizing: inturn reduces the slack)
+![before upsizing](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/02644fb5-eb5b-41f6-814e-5caa5eeef576)
+<br><br>
+      # Command to fix slack by upsizing the cell
+      >> report_net -connections _14513_
+
+      # Checking syntax of replace_cell
+      >> help replace_cell
+
+       # Replacing cell _14513_
+       >> replace_cell _14513_ sky130_fd_sc_hd__or2_4
+
+       # Check for the changes in slew rate and slack value
+       >> report_checks -fields {net cap slew input_pins} -digits 4
+
+##### Figure: Executing the above commands on cell _14513_
+![14513 cell](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/61bb4f1f-386b-44f0-8766-665fbb75e1bc)
+<br><br>
+##### Figure: Reduced slack
+![final slack after P1](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/07e8a3f9-197d-4413-9ba4-487eb26ab106)
+<br><br>
+##### Figure: After upsizing cell _14513_
+![after upsizing](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/0240082a-fc9d-437a-90fd-b24c64d42b35)
+<br><br>
+##### Figure: _tns_ and _wns_ values after slack reduction
+![tns and wns values](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/99681e99-e734-4897-b92a-925f131a65b7)
+<br><br>
+ ##### Executing the above step on cell _14481_ as well
+![14481 cell](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/4d85c4ae-5b48-4d39-b4eb-99fa339de726)
+<br><br>
+##### Figure: Find the startpoints and endpoints to run the report check
+      # Command to run the _report checks_
+      >> report_checks -from _29052_ -to _30440_ -through _14513_
+![start and end points](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/61367cd9-97b3-4bc3-a0c0-296e3206a8b2)
+<br><br>
+##### Figure: Final Slack Value reduced considerably to _- 22.79_
+![final slack reduced value](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/1bcc2bac-99b6-4643-a305-15f6d28e7fa6)
+
+    Difference in slack value = (initial - final) slack
+                              = (- 23.5092 - (- 22.79)) 
+                              =  - 0.7192 
+##### Figure: Give the permission using command _chmod 755 picorv32a.synthesis.v_ 
+![chmod 755 permission](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/9616d544-2bf0-455d-b99f-65cf148574e1)
+<br><br>
+##### Figure: Execute this to update the verilog file 
+      # Command to update the verilog file 
+      # syntax --> help filename
+      >> write_verilog picorv32a.synthesis.v
+![write_verilog and exit](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/585c0a54-d0a0-4fce-9f7a-a3f88cd01bde)
+<br><br>
+##### Figure: Updated synthesis file _picorv32a.synthesis.v_ 
+![updated synth v file](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/225ce33e-9744-4c7d-99ef-ad06945c0214)
+<br><br>
+##### Figure: Check for the cell _14481_ in the updated verilog file
+![cell 14481 found](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/82494606-9cdd-48d7-8d48-006fbe035ec4)
+<br><br><br><br>
+
