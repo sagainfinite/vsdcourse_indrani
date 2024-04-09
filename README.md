@@ -570,6 +570,12 @@ Author: Indrani Aekabote
 ##### Figure: CTS file inside _less README.md_ 
 ![inside readme for CTS](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/809ec85e-e8c2-4e43-a974-4de99afcd70c)
 <br><br>
+##### Figure: View _run_cts_ in .tcl description
+![run_cts in tcl desc](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/8ede4c18-8229-432e-ac66-eabf0575bd81)
+<br><br>
+##### Figure: Find for cts in _command.tcl_
+![cts tcl in tcl_cmd](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/2463d007-82c9-42b1-9bd3-31a35ade768f)
+<br><br>
 ##### Figure: Let's find the CTS value for these
 ![lets find cts values](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/0c62e6b1-1b96-4914-b3ed-56d25fe5081b)
 <br><br>
@@ -579,10 +585,5 @@ Author: Indrani Aekabote
 ##### Figure: Two commands to find the CTS values for _typical.sdc_ 
 ![same 2 same echo](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/38c5e1ad-194d-4333-91bb-58d533bb6dfd)
 <br><br>
-##### Figure: View _run_cts_ in .tcl description
-![run_cts in tcl desc](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/8ede4c18-8229-432e-ac66-eabf0575bd81)
-<br><br>
-##### Figure: Find for cts in _command.tcl_
-![cts tcl in tcl_cmd](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/2463d007-82c9-42b1-9bd3-31a35ade768f)
-<br><br>
+
 
