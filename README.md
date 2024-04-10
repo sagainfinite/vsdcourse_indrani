@@ -632,3 +632,27 @@ Author: Indrani Aekabote
 ##### Figure: Setup Slack final value
 ![setup slack](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/b1ed8d4d-3370-4d1a-9505-2726c82147d9)
 <br><br><br><br>
+
+
+## [DAY - 5 Final steps for RTL2GDS using tritonRoute and openSTA](https://github.com/sagainfinite/vsdcourse_indrani?tab=readme-ov-file#DAY-5) <br>
+
+##### Figure: The Power Distribution flow digram
+![routing flow](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/23f5bfcd-dc44-4309-bdc0-1528e8c7c990)
+<br><br>
+#### Power is distributed in stages, the first stage is the power ring consisting of the VDD and GND lines which further divide into power strips.
+#### Then, the macros get the power following which from there the standard cells get their _standard cell row_ power. 
+    # Note: In our designs we are ONLY working with the standard cells alone. No macros is present in our design.
+#### These power strips diverge and converge to from a network for good rounting. Power Planning is crucial in the step.
+<br><br>
+        #To run the clock tree we need to use the following command in openroad.
+        >> run_cts
+##### Figure: Unfortunetely, my cts is not running. Message shows that _run_cts failed_
+![run_cts failed](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/61d76a3e-9393-4b94-9082-8617915a12ab)
+<br><br>
+#### The next step is to generate the PDN
+        # To generate the PDN in openroad
+        >> gen_pdn
+##### Figure: Unfortunetely, my pdn was not generated due to the previous failed CTS step. Message shows that _gen_pdn failed_
+![gen_pdn failed](https://github.com/sagainfinite/vsdcourse_indrani/assets/102749620/4f68cdcc-cc65-48b1-b8cc-26646b585dac)
+<br><br>
+
